@@ -1,28 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8">
+    <title>MovieInfo</title>
+    <!-- Bootstrap css cdn file -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <title>Movie Page</title>
+    <!-- <link rel="stylesheet" href="./style.css"> -->
 </head>
 
-<body>
-    <div class="container">
-        <div>
-            <img src="https://via.placeholder.com/150" alt="movie poster">
-        </div>
-        <div>
-            <h1 id="title" class="display-3 text-center"></h1>
-            <h5 id="releaseDate"></h5>
-            <h5 id="duration"></h5>
+<body class="bg-dark">
 
-        </div>
+
+    <div class="container mt-5">
+        <div id="movie" class="text-white"></div>
     </div>
-    <script src="main.js"></script>
+
+
+
+    <!-- main Javascript file -->
+    <script src="main.js" type="text/javascript"></script>
+    <!-- JQuery cdn file -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+        </script>
+    <script>
+        getMovie();
+    </script>
 </body>
 
 </html>
